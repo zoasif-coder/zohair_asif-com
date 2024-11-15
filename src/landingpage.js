@@ -39,9 +39,8 @@ const LandingPage = () => {
 
         <div className="prose prose-lg max-w-none">
           <p className="text-xl leading-relaxed about-text">
-            Welcome to my personal website! I'm a [your profession/interest] passionate about
-            [your interests/skills]. I love working on [specific areas/technologies]
-            and am always excited to take on new challenges.
+          Welcome to my personal website! The lock-in is about to be generational. Every "It is so over" shall be 
+          be met with "We are so back".
           </p>
           <Link to="/map" className="App-link">
             Go to Map

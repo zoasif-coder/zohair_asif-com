@@ -7,11 +7,13 @@ import reportWebVitals from './reportWebVitals';
 import LandingPage from './landingpage';
 import MapCard from './MapCard';
 import csvFile from './assets/coords/locations.csv';
+import WebsiteHeader from './header';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
     <Router>
+      <WebsiteHeader />
       <Routes>
         <Route path="/" element={<LandingPage />} />
         <Route path="/map" element={<MapCard csvFile={csvFile} />} />
