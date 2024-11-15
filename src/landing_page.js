@@ -17,16 +17,12 @@ const LandingPage = () => {
   };
 
   return (
-    <div className="min-h-screen relative overflow-hidden bg-[#FFFAF0]">
+    <div className="min-h-screen relative overflow-hidden bg-[#FFFAF0] px-10">
       {/* Animated background blobs */}
       <FloatingBlob className="bg-[#004225]/20 w-96 h-96 top-0 -left-4" />
       <FloatingBlob className="bg-[#004225]/20 w-96 h-96 top-48 -right-4 animation-delay-2000" />
       <FloatingBlob className="bg-[#004225]/20 w-96 h-96 bottom-24 left-1/2 animation-delay-4000" />
       
-      <nav className="relative z-10 bg-white/90 shadow-md">
-        {/* ... previous nav code ... */}
-      </nav>
-
       <main className="relative z-10 max-w-6xl mx-auto px-4 py-16">
         <div className="flex flex-col md:flex-row items-start justify-between mb-12">
           <div className="md:w-1/2">
