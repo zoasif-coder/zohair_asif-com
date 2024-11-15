@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { Link } from 'react-router-dom';
 import { Menu, X } from 'lucide-react';
 
 const WebsiteHeader = () => {
@@ -15,11 +16,11 @@ const WebsiteHeader = () => {
 
           {/* Navigation (visible on medium/large screens) */}
           <nav className="hidden sm:flex items-center space-x-6">
-            <a href="/" className="font-bold text-[#004225] hover:bg-[#004225]/90 hover:text-white px-4 py-2 rounded-md transition-all duration-300">Home</a>
-            <a href="/map" className="font-bold text-[#004225] hover:bg-[#004225]/90 hover:text-white px-4 py-2 rounded-md transition-all duration-300">Airpods</a>
-            <a href="#" className="font-bold text-[#004225] hover:bg-[#004225]/90 hover:text-white px-4 py-2 rounded-md transition-all duration-300">About</a>
-            <a href="#" className="font-bold text-[#004225] hover:bg-[#004225]/90 hover:text-white px-4 py-2 rounded-md transition-all duration-300">Services</a>
-            <a href="#" className="font-bold text-[#004225] hover:bg-[#004225]/90 hover:text-white px-4 py-2 rounded-md transition-all duration-300">Contact</a>
+            <Link to="/" className="font-bold text-[#004225] hover:bg-[#004225]/90 hover:text-white px-4 py-2 rounded-md transition-all duration-300">Home</Link>
+            <Link to="/map" className="font-bold text-[#004225] hover:bg-[#004225]/90 hover:text-white px-4 py-2 rounded-md transition-all duration-300">Airpods</Link>
+            <Link to="#" className="font-bold text-[#004225] hover:bg-[#004225]/90 hover:text-white px-4 py-2 rounded-md transition-all duration-300">About</Link>
+            <Link to="#" className="font-bold text-[#004225] hover:bg-[#004225]/90 hover:text-white px-4 py-2 rounded-md transition-all duration-300">Services</Link>
+            <Link to="#" className="font-bold text-[#004225] hover:bg-[#004225]/90 hover:text-white px-4 py-2 rounded-md transition-all duration-300">Contact</Link>
           </nav>
 
           {/* Mobile Menu */}
@@ -32,11 +33,11 @@ const WebsiteHeader = () => {
             </button>
             {isMenuOpen && (
               <div className="absolute right-0 mt-2 py-2 w-48 bg-white/90 backdrop-blur-md rounded-md shadow-lg z-10">
-                <a href="/" className="font-bold text-[#004225] hover:bg-[#004225]/90 hover:text-white px-4 py-2 rounded-md transition-all duration-300">Home</a>
-                <a href="/map" className="font-bold text-[#004225] hover:bg-[#004225]/90 hover:text-white px-4 py-2 rounded-md transition-all duration-300">Airpods</a>
-                <a href="#" className="font-bold text-[#004225] hover:bg-[#004225]/90 hover:text-white px-4 py-2 rounded-md transition-all duration-300">About</a>
-                <a href="#" className="font-bold text-[#004225] hover:bg-[#004225]/90 hover:text-white px-4 py-2 rounded-md transition-all duration-300">Services</a>
-                <a href="#" className="font-bold text-[#004225] hover:bg-[#004225]/90 hover:text-white px-4 py-2 rounded-md transition-all duration-300">Contact</a>
+                <Link to="/" className="block font-bold text-[#004225] hover:bg-[#004225]/90 hover:text-white px-4 py-2 rounded-md transition-all duration-300">Home</Link>
+                <Link to="/map" className="block font-bold text-[#004225] hover:bg-[#004225]/90 hover:text-white px-4 py-2 rounded-md transition-all duration-300">Airpods</Link>
+                <Link to="#" className="block font-bold text-[#004225] hover:bg-[#004225]/90 hover:text-white px-4 py-2 rounded-md transition-all duration-300">About</Link>
+                <Link to="#" className="block font-bold text-[#004225] hover:bg-[#004225]/90 hover:text-white px-4 py-2 rounded-md transition-all duration-300">Services</Link>
+                <Link to="#" className="block font-bold text-[#004225] hover:bg-[#004225]/90 hover:text-white px-4 py-2 rounded-md transition-all duration-300">Contact</Link>
               </div>
             )}
           </div>
