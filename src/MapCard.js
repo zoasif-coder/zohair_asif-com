@@ -37,7 +37,7 @@ const MapCard = ({ csvFile }) => {
   }, [csvFile]);
 
   return (
-    <MapContainer center={[0, 0]} zoom={2} style={{ height: '400px', width: 'calc(100% - 20px)', margin: '10px' }}>
+    <MapContainer center={[0, 0]} zoom={2} style={{ height: '90vh', width: 'calc(100% - 20px)', margin: '10px' }}>
       <TileLayer
         url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
         attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
