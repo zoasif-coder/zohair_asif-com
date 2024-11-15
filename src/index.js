@@ -4,7 +4,7 @@ import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
-import LandingPage from './landingpage';
+import LandingPage from './landing_page';
 import MapCard from './MapCard';
 import csvFile from './assets/coords/locations.csv';
 import WebsiteHeader from './header';

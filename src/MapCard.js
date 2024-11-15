@@ -37,29 +37,31 @@ const MapCard = ({ csvFile }) => {
   }, [csvFile]);
 
   return (
-    <MapContainer center={[0, 0]} zoom={2} style={{ height: '90vh', width: 'calc(100% - 20px)', margin: '10px' }}>
-      <TileLayer
-        url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
-        attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
-      />
-      {coordinates.length > 0 && (
-        <>
-          <Polyline positions={coordinates.map(coord => [coord.lat, coord.lng])} color="blue" dashArray="5, 10" />
-          {coordinates.map((coord, index) => (
-            <CircleMarker
-              key={index}
-              center={[coord.lat, coord.lng]}
-              radius={index === coordinates.length - 1 ? 10 : 5}
-              color={index === coordinates.length - 1 ? 'red' : 'blue'}
-            >
-              <Tooltip>
-                <span>{`Date: ${coord.date}, Time: ${coord.time}`}</span>
-              </Tooltip>
-            </CircleMarker>
-          ))}
-        </>
-      )}
-    </MapContainer>
+    <div style={{ paddingTop: '50px' }}>
+      <MapContainer center={[0, 0]} zoom={2} style={{ height: '90vh', width: 'calc(100% - 20px)', margin: '10px' }}>
+        <TileLayer
+          url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
+          attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+        />
+        {coordinates.length > 0 && (
+          <>
+            <Polyline positions={coordinates.map(coord => [coord.lat, coord.lng])} color="blue" dashArray="5, 10" />
+            {coordinates.map((coord, index) => (
+              <CircleMarker
+                key={index}
+                center={[coord.lat, coord.lng]}
+                radius={index === coordinates.length - 1 ? 10 : 5}
+                color={index === coordinates.length - 1 ? 'red' : 'blue'}
+              >
+                <Tooltip>
+                  <span>{`Date: ${coord.date}, Time: ${coord.time}`}</span>
+                </Tooltip>
+              </CircleMarker>
+            ))}
+          </>
+        )}
+      </MapContainer>
+    </div>
   );
 };
 

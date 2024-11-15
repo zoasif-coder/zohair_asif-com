@@ -7,36 +7,39 @@ const WebsiteHeader = () => {
   const toggleMenu = () => setIsMenuOpen(!isMenuOpen);
 
   return (
-    <header className="bg-white shadow-md">
-      <div className="max-w-6xl mx-auto px-4 py-4 flex items-center justify-between">
-        {/* Logo */}
-        <div className="text-2xl font-bold text-[#004225]">ZOY</div>
+    <header className="fixed w-full top-0 z-50">
+      <div className="w-full mx-auto px-4 py-2 bg-white/20 backdrop-blur-md backdrop-saturate-150 shadow-lg">
+        <div className="flex items-center justify-between">
+          {/* Logo */}
+          <div className="text-2xl font-bold text-[#004225]">ZOY</div>
 
-        {/* Navigation (visible on medium/large screens) */}
-        <nav className="hidden sm:flex items-center space-x-6">
-          <a href="/" className="font-bold text-[#004225] hover:bg-[#004225] hover:text-white px-4 py-2 rounded-md">Home</a>
-          <a href="/map" className="font-bold text-[#004225] hover:bg-[#004225] hover:text-white px-4 py-2 rounded-md">Airpods</a>
-          <a href="#" className="font-bold text-[#004225] hover:bg-[#004225] hover:text-white px-4 py-2 rounded-md">About</a>
-          <a href="#" className="font-bold text-[#004225] hover:bg-[#004225] hover:text-white px-4 py-2 rounded-md">Services</a>
-          <a href="#" className="font-bold text-[#004225] hover:bg-[#004225] hover:text-white px-4 py-2 rounded-md">Contact</a>
-        </nav>
+          {/* Navigation (visible on medium/large screens) */}
+          <nav className="hidden sm:flex items-center space-x-6">
+            <a href="/" className="font-bold text-[#004225] hover:bg-[#004225]/90 hover:text-white px-4 py-2 rounded-md transition-all duration-300">Home</a>
+            <a href="/map" className="font-bold text-[#004225] hover:bg-[#004225]/90 hover:text-white px-4 py-2 rounded-md transition-all duration-300">Airpods</a>
+            <a href="#" className="font-bold text-[#004225] hover:bg-[#004225]/90 hover:text-white px-4 py-2 rounded-md transition-all duration-300">About</a>
+            <a href="#" className="font-bold text-[#004225] hover:bg-[#004225]/90 hover:text-white px-4 py-2 rounded-md transition-all duration-300">Services</a>
+            <a href="#" className="font-bold text-[#004225] hover:bg-[#004225]/90 hover:text-white px-4 py-2 rounded-md transition-all duration-300">Contact</a>
+          </nav>
 
-        {/* Mobile Menu */}
-        <div className="sm:hidden relative">
-          <button
-            className="text-gray-500 hover:text-gray-700 focus:outline-none"
-            onClick={toggleMenu}
-          >
-            {isMenuOpen ? <X size={24} /> : <Menu size={24} />}
-          </button>
-          {isMenuOpen && (
-            <div className="absolute right-0 mt-2 py-2 w-48 bg-white rounded-md shadow-lg z-10">
-              <a href="#" className="block px-4 py-2 hover:bg-[#004225] hover:text-white">Home</a>
-              <a href="#" className="block px-4 py-2 hover:bg-[#004225] hover:text-white">About</a>
-              <a href="#" className="block px-4 py-2 hover:bg-[#004225] hover:text-white">Services</a>
-              <a href="#" className="block px-4 py-2 hover:bg-[#004225] hover:text-white">Contact</a>
-            </div>
-          )}
+          {/* Mobile Menu */}
+          <div className="sm:hidden relative">
+            <button
+              className="text-[#004225] hover:text-[#004225]/80 focus:outline-none transition-colors duration-300"
+              onClick={toggleMenu}
+            >
+              {isMenuOpen ? <X size={24} /> : <Menu size={24} />}
+            </button>
+            {isMenuOpen && (
+              <div className="absolute right-0 mt-2 py-2 w-48 bg-white/90 backdrop-blur-md rounded-md shadow-lg z-10">
+                <a href="/" className="font-bold text-[#004225] hover:bg-[#004225]/90 hover:text-white px-4 py-2 rounded-md transition-all duration-300">Home</a>
+                <a href="/map" className="font-bold text-[#004225] hover:bg-[#004225]/90 hover:text-white px-4 py-2 rounded-md transition-all duration-300">Airpods</a>
+                <a href="#" className="font-bold text-[#004225] hover:bg-[#004225]/90 hover:text-white px-4 py-2 rounded-md transition-all duration-300">About</a>
+                <a href="#" className="font-bold text-[#004225] hover:bg-[#004225]/90 hover:text-white px-4 py-2 rounded-md transition-all duration-300">Services</a>
+                <a href="#" className="font-bold text-[#004225] hover:bg-[#004225]/90 hover:text-white px-4 py-2 rounded-md transition-all duration-300">Contact</a>
+              </div>
+            )}
+          </div>
         </div>
       </div>
     </header>
