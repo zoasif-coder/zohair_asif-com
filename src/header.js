@@ -17,9 +17,7 @@ const WebsiteHeader = () => {
           <nav className="hidden sm:flex items-center space-x-6">
             <Link to="/" className="font-bold text-[#004225] hover:bg-[#004225]/90 hover:text-white px-4 py-2 rounded-md transition-all duration-300">Home</Link>
             <Link to="/map" className="font-bold text-[#004225] hover:bg-[#004225]/90 hover:text-white px-4 py-2 rounded-md transition-all duration-300">Airpods</Link>
-            <Link to="#" className="font-bold text-[#004225] hover:bg-[#004225]/90 hover:text-white px-4 py-2 rounded-md transition-all duration-300">About</Link>
-            <Link to="#" className="font-bold text-[#004225] hover:bg-[#004225]/90 hover:text-white px-4 py-2 rounded-md transition-all duration-300">Services</Link>
-            <Link to="#" className="font-bold text-[#004225] hover:bg-[#004225]/90 hover:text-white px-4 py-2 rounded-md transition-all duration-300">Contact</Link>
+            <Link to="/ThirtyFiveMM" className="font-bold text-[#004225] hover:bg-[#004225]/90 hover:text-white px-4 py-2 rounded-md transition-all duration-300">35mm</Link>
           </nav>
 
           {/* Mobile Menu */}
@@ -34,9 +32,7 @@ const WebsiteHeader = () => {
               <div className="absolute right-0 mt-2 py-2 w-48 bg-white/90 backdrop-blur-md rounded-md shadow-lg z-[10000]">
                 <Link to="/" className="block font-bold text-[#004225] hover:bg-[#004225]/90 hover:text-white px-4 py-2 rounded-md transition-all duration-300">Home</Link>
                 <Link to="/map" className="block font-bold text-[#004225] hover:bg-[#004225]/90 hover:text-white px-4 py-2 rounded-md transition-all duration-300">Airpods</Link>
-                <Link to="#" className="block font-bold text-[#004225] hover:bg-[#004225]/90 hover:text-white px-4 py-2 rounded-md transition-all duration-300">About</Link>
-                <Link to="#" className="block font-bold text-[#004225] hover:bg-[#004225]/90 hover:text-white px-4 py-2 rounded-md transition-all duration-300">Services</Link>
-                <Link to="#" className="block font-bold text-[#004225] hover:bg-[#004225]/90 hover:text-white px-4 py-2 rounded-md transition-all duration-300">Contact</Link>
+                <Link to="/ThirtyFiveMM" className="font-bold text-[#004225] hover:bg-[#004225]/90 hover:text-white px-4 py-2 rounded-md transition-all duration-300">35mm</Link>
               </div>
             )}
           </div>

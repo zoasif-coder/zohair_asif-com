@@ -8,6 +8,7 @@ import LandingPage from './landing_page';
 import MapCard from './MapCard';
 import csvFile from './assets/coords/locations.csv';
 import WebsiteHeader from './header';
+import ThirtyFiveMM from './35mm';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -17,6 +18,7 @@ root.render(
       <Routes>
         <Route path="/" element={<LandingPage />} />
         <Route path="/map" element={<MapCard csvFile={csvFile} />} />
+        <Route path="/ThirtyFiveMM" element={<ThirtyFiveMM />} />
       </Routes>
     </Router>
   </React.StrictMode>
