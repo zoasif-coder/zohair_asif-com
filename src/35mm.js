@@ -44,7 +44,7 @@ const ThirtyFiveMM = () => {
   };
 
   return (
-    <div className="min-h-screen relative overflow-hidden bg-[#FFFAF0] px-10">
+    <div className="min-h-screen relative overflow-hidden bg-[#FFFAF0] px-10 py-10">
       {/* Background blobs */}
       <div className="absolute rounded-full mix-blend-multiply filter blur-3xl animate-blob opacity-70 bg-[#004225]/20 w-96 h-96 top-0 -left-4" />
       <div className="absolute rounded-full mix-blend-multiply filter blur-3xl animate-blob opacity-70 bg-[#004225]/20 w-96 h-96 top-48 -right-4 animation-delay-2000" />
@@ -103,11 +103,11 @@ const ThirtyFiveMM = () => {
       )}
 
       <div style={{ paddingTop: '75px' }}>
-        <h1 className="text-4xl font-bold text-center text-[#004225] mb-6">35mm Adventures</h1>
+        <h1 className="text-4xl font-bold text-center text-[#004225] mb-6">35mm love</h1>
         
         <div className="max-w-3xl mx-auto mb-12">
-          <p className="text-center text-gray-600 bg-white/90 backdrop-blur-sm rounded-lg shadow-md border border-gray-200 p-6">
-            A collection of moments captured on 35mm film. Each frame tells a story, frozen in time through analog photography.
+          <p className="text-center text-gray-600 p-6">
+            A collection of moments caught no 35mm film. Mainly using a Traveler AF Zoom.
           </p>
         </div>
 
