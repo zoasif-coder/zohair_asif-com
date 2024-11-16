@@ -1,10 +1,15 @@
 {
   "files": {
     "main.css": "/static/css/main.ef9acee9.css",
-    "main.js": "/static/js/main.d6292170.js",
+    "main.js": "/static/js/main.4eec9686.js",
     "static/js/453.97a30c3c.chunk.js": "/static/js/453.97a30c3c.chunk.js",
     "static/media/Negative0-02-01(1)_02_05_2023_Como_Italy.jpg": "/static/media/Negative0-02-01(1)_02_05_2023_Como_Italy.5da1320e82f26109af9c.jpg",
     "static/media/Negative0-01-00_01_05_2023_Como_Italy.jpg": "/static/media/Negative0-01-00_01_05_2023_Como_Italy.82cc29a95dd946da5126.jpg",
+    "static/media/Negative0-08-07_27_07_2023_Milan_Italy.jpg": "/static/media/Negative0-08-07_27_07_2023_Milan_Italy.8af9500b51745b9940af.jpg",
+    "static/media/Negative0-10-09_27_07_2023_Milan_Italy.jpg": "/static/media/Negative0-10-09_27_07_2023_Milan_Italy.8ebe919a473b3e5b013a.jpg",
+    "static/media/Negative0-14-13_27_07_2023_Milan_Italy.jpg": "/static/media/Negative0-14-13_27_07_2023_Milan_Italy.fc5f3f9a57723272e50a.jpg",
+    "static/media/Negative0-36-35_29_08_2023_Zurich_Switzerland.jpg": "/static/media/Negative0-36-35_29_08_2023_Zurich_Switzerland.4549a62cf31588e342f6.jpg",
+    "static/media/Negative0-11-10_27_07_2023_Milan_Italy.jpg": "/static/media/Negative0-11-10_27_07_2023_Milan_Italy.66db2fb20cf3ecdeee7d.jpg",
     "static/media/Negative0-11-10_01_06_2023_Stuttgart_Germany.jpg": "/static/media/Negative0-11-10_01_06_2023_Stuttgart_Germany.52715d192e5a46048bd1.jpg",
     "static/media/Negative0-29-28(1)_02_06_2023_Waldstadt_Germany.jpg": "/static/media/Negative0-29-28(1)_02_06_2023_Waldstadt_Germany.4c0096c11041d4959b14.jpg",
     "static/media/Negative0-03-02_01_05_2023_Como_Italy.jpg": "/static/media/Negative0-03-02_01_05_2023_Como_Italy.906e1238dc2142a1a858.jpg",
@@ -15,11 +20,11 @@
     "static/media/locations.csv": "/static/media/locations.54957eb2952d0ae6b613.csv",
     "index.html": "/index.html",
     "main.ef9acee9.css.map": "/static/css/main.ef9acee9.css.map",
-    "main.d6292170.js.map": "/static/js/main.d6292170.js.map",
+    "main.4eec9686.js.map": "/static/js/main.4eec9686.js.map",
     "453.97a30c3c.chunk.js.map": "/static/js/453.97a30c3c.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.ef9acee9.css",
-    "static/js/main.d6292170.js"
+    "static/js/main.4eec9686.js"
   ]
 }
