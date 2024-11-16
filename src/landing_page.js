@@ -1,8 +1,40 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { Menu } from 'lucide-react';
+import { Icon } from '@iconify/react';
+import githubIcon from '@iconify-icons/simple-icons/github';
+import linkedinIcon from '@iconify-icons/simple-icons/linkedin';
+import instagramIcon from '@iconify-icons/simple-icons/instagram';
 import './App.css';
 import myImage from './assets/images/zohair.jpg';
+
+const SocialLinks = () => (
+  <div className="flex justify-center space-x-10 mt-6">
+    <a 
+      href="https://github.com/zoasif-coder" 
+      target="_blank" 
+      rel="noopener noreferrer"
+      className="text-[#004225] hover:text-[#004225]/80 transition-colors duration-300"
+    >
+      <Icon icon={githubIcon} width="36" height="36" />
+    </a>
+    <a 
+      href="https://www.linkedin.com/in/zohair-asif-4b272593/" 
+      target="_blank" 
+      rel="noopener noreferrer"
+      className="text-[#004225] hover:text-[#004225]/80 transition-colors duration-300"
+    >
+      <Icon icon={linkedinIcon} width="36" height="36" />
+    </a>
+    <a 
+      href="https://instagram.com/yoicanonlychillforabittho" 
+      target="_blank" 
+      rel="noopener noreferrer"
+      className="text-[#004225] hover:text-[#004225]/80 transition-colors duration-300"
+    >
+      <Icon icon={instagramIcon} width="36" height="36" />
+    </a>
+  </div>
+);
 
 const FloatingBlob = ({ className }) => (
   <div className={`absolute rounded-full mix-blend-multiply filter blur-3xl animate-blob opacity-70 ${className}`} />
@@ -37,20 +69,22 @@ const LandingPage = () => {
           </div>
 
           <div className="md:w-1/2 flex justify-center md:justify-end mt-8 md:mt-0">
-            <div className="relative w-64 h-64">
-              <img
-                src={myImage}
-                alt="Your Profile"
-                className="rounded-lg shadow-lg object-cover w-full h-full transition-all duration-300 hover:scale-105 hover:-translate-y-2"
-              />
+            <div className="flex flex-col items-center">
+              <div className="relative w-64 h-64">
+                <img
+                  src={myImage}
+                  alt="Your Profile"
+                  className="rounded-lg shadow-lg object-cover w-full h-full transition-all duration-300 hover:scale-105 hover:-translate-y-2"
+                />
+              </div>
+              <SocialLinks /> {/* Added here */}
             </div>
           </div>
         </div>
 
-        <div className="prose prose-lg max-w-none bg-white/90 p-6 rounded-lg shadow-lg hover:shadow-xl transition-all duration-300">
+        <div className="prose prose-lg max-w-none">
           <p className="text-xl leading-relaxed text-[#004225]">
-            Welcome to my personal website! The lock-in is about to be generational. Every "It is so over" shall be 
-            be met with "We are so back".
+            Welcome to my share of the internet if, if you have made it here somehow you might as well reach out and say hi!
           </p>
         </div>
       </main>
