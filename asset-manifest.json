@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.537c69c3.css",
-    "main.js": "/static/js/main.fb5ded0d.js",
+    "main.js": "/static/js/main.07d48fa7.js",
     "static/js/453.97a30c3c.chunk.js": "/static/js/453.97a30c3c.chunk.js",
     "static/media/Negative0-02-01(1)_02_05_2023_Como_IT.jpg": "/static/media/Negative0-02-01(1)_02_05_2023_Como_IT.5da1320e82f26109af9c.jpg",
     "static/media/Negative0-24_15_09_2023_Zurich_CH.jpg": "/static/media/Negative0-24_15_09_2023_Zurich_CH.1a15cd94e57f17e64c67.jpg",
@@ -32,14 +32,14 @@
     "static/media/Negative0-04-03_01_05_2023_Como_IT.jpg": "/static/media/Negative0-04-03_01_05_2023_Como_IT.4eac942606e1b2e9edc8.jpg",
     "static/media/zohair.jpg": "/static/media/zohair.9f68e1f29a1d897122db.jpg",
     "static/media/logo.svg": "/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
-    "static/media/locations.csv": "/static/media/locations.e3f723aa75bd776b0a4d.csv",
+    "static/media/locations.csv": "/static/media/locations.b5b55347df6383e7e335.csv",
     "index.html": "/index.html",
     "main.537c69c3.css.map": "/static/css/main.537c69c3.css.map",
-    "main.fb5ded0d.js.map": "/static/js/main.fb5ded0d.js.map",
+    "main.07d48fa7.js.map": "/static/js/main.07d48fa7.js.map",
     "453.97a30c3c.chunk.js.map": "/static/js/453.97a30c3c.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.537c69c3.css",
-    "static/js/main.fb5ded0d.js"
+    "static/js/main.07d48fa7.js"
   ]
 }
