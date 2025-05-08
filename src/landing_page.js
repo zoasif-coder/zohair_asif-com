@@ -84,7 +84,7 @@ const LandingPage = () => {
 
         <div className="prose prose-lg max-w-none">
           <p className="text-xl leading-relaxed text-[#004225]">
-            Welcome to my share of the internet if, if you have made it here somehow you might as well reach out and say hi!
+            Welcome to my share of the internet if, if you have made it here somehow you might as well reach out and say hi! hehe
           </p>
         </div>
       </main>
