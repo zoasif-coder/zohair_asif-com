@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Open Find My app and wait
-open -a "Find My"
+open "/System/Applications/FindMy.app"
 sleep 5
 
 cd /Users/zohairasif/zohair_asif-com/Find-My-Mapper/mapper
